@@ -15,3 +15,12 @@ def read_questions(position: int):
             res = question.get('question')
             print(res)
     return res
+
+
+
+
+
+
+if __name__ == "__main__":
+    print(read_user())
+    read_questions(1)
