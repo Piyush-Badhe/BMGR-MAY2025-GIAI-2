@@ -11,16 +11,7 @@ def read_questions(position: int):
         questions = json.load(stream)
 
     for question in questions:
-        if question['position'] == position:
+     if question['position'] == position:
             res = question.get('question')
             print(res)
             return res
-
-
-
-
-
-
-if __name__ == "__main__":
-    print(read_user())
-    read_questions(1)
