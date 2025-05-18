@@ -14,4 +14,4 @@ def read_questions(position: int):
      if question['position'] == position:
             res = question.get('question')
             print(res)
-            return res
+    return res
