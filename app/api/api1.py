@@ -1,5 +1,5 @@
 import json
-BASE_DIR = "/Users/rajeshthakur/Desktop/rajesh/Archive/teaching/agentic_ai/BMGR-MAY2025-GIAI-2/"
+BASE_DIR = "/Users/Paddy/BMGR-MAY2025-GIAI-2/"
 def read_user():
     with open(f"{BASE_DIR}data/users.json") as stream:
         users = json.load(stream)
