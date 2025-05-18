@@ -4,14 +4,20 @@ import uvicorn
 app = FastAPI()
 @app.get("/")
 def root():
-    return {"message": "Fast API in python , is my 1st python code"}
+    return {"message": "Fast API in python"}
 
+@app.post("/add")
 def add(a, b):
-    return a+b
+    a = float(a)
+    b = float(b)
+    c = a + b
+    return c
 
+@app.post("/sub")
 def sub(a,b):
-    c = a-b
-
+    a = float(a)
+    b = float(b)
+    c = a - b
     return c
 
 
